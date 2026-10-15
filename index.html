@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="theme-color" content="#000000" />
+<title>ASTEROIDS - 1979 Arcade</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="game-wrapper">
+  <div id="topbar">
+    <a id="back-link" href="https://wethepeoplepress.com/games/">&larr; WTP ARCADE</a>
+    <button type="button" id="btn-mute" class="mini-btn" aria-label="Mute">SOUND ON</button>
+  </div>
+  <div id="canvas-wrap">
+    <canvas id="game" width="1024" height="768" aria-label="Asteroids game"></canvas>
+  </div>
+  <div id="help">ARROWS / WASD - ROTATE &amp; THRUST &middot; SPACE - FIRE &middot; SHIFT - HYPERSPACE &middot; P - PAUSE &middot; M - MUTE</div>
+  <div id="mobile-controls" aria-label="Touch controls">
+    <div class="mgroup">
+      <button type="button" class="tbtn" data-k="left" aria-label="Rotate left">&#9664;</button>
+      <button type="button" class="tbtn" data-k="right" aria-label="Rotate right">&#9654;</button>
+    </div>
+    <div class="mgroup">
+      <button type="button" class="tbtn small" data-k="hyper" aria-label="Hyperspace">HYPER</button>
+      <button type="button" class="tbtn" data-k="thrust" aria-label="Thrust">&#9650;</button>
+      <button type="button" class="tbtn fire" data-k="fire" aria-label="Fire">FIRE</button>
+    </div>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
